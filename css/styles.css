@@ -141,7 +141,6 @@ color: var(--active-color);
     background-color: var(--secondary-bgc);
     padding-bottom: 188px;
     padding-top: 188px;
-    margin-top: 20px;
 }
 
 .hero-title {
@@ -193,12 +192,15 @@ color: var(--active-color);
 }
 .section {
     background-color: var(--bgc);
-    padding-top: 100px;
+    padding-top: 120px;
     padding-bottom: 120px;
 }
 
-.section-discription {
+.section-discription:not(:last-child) {
     margin-right: 24px;
+}
+
+.section-discription {
     width: 264px;
 }
 
@@ -271,6 +273,7 @@ margin-bottom: 120px;
 .team-link {
     background-color: var(--bgc);
     width: 264px;
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-link:not(:last-child) {
@@ -287,7 +290,7 @@ margin-bottom: 120px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--title-text-color);
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 }
 
 .team-text {
@@ -381,6 +384,7 @@ margin-bottom: 120px;
 .items-portfolio {
     padding: 32px 16px;
     border: 1px solid #E7E9FC;
+    border-top: none;
 }
 
 .items {
@@ -392,6 +396,10 @@ margin-bottom: 120px;
 
 .items:nth-child(3n) {
     margin-right: 0;
+}
+
+.items:nth-last-child(-n+3) {
+    margin-bottom: 0;
 }
 
 .items-title {
